@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>SI organizacji kina</title>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="JTHTML 8.6">
+    <meta name="Robots" content="index">
+    <link rel="Stylesheet" href="styl.css" type="text/css">
+
+  </head>
+<body>
+        <div id="header">
+             <table class="table">
+                   <tbody>
+                          <tr>
+<!--  -->
+                              <td style="background: #ffffed"><a href="html.html">Strona główna</a></td>
+                              <td><a href="Diagram przypadków użycia.html">Diagram przypadków użycia</a></td>
+                              <td><a href="Diagram analityczny.html">Diagram analityczny</a></td>
+                              <td><a href="sidczyn.html">Scenariusze i diagramy czynności</a></td>
+                              <td><a href="Diagram klas.html">Diagram klas</a></td>
+                              <td><a href="obiekty.html">Diagram obiektów</a></td>
+                          </tr>
+                   </tbody>
+            </table>
+        </div>
+        <div id="cnt">
+  <body>
+   <table  style="float:right; margin:6px">
+               <tbody>
+                 <tr>
+                   <td><a href="#dpu"><img src="dpu.jpg" style="border: 0; float: right" width="75%" height="75%" class="thumbnail2" alt=""></a>
+                   <a href="#_" class="lightbox2" id="Diagram Przypadków Użycia"/> <img src="dpu.jpg"></td>
+                 </tr>
+                 <tr>
+                   <td><i><b></b></i></td>
+                 </tr>
+               </tbody>
+             </table>
+
+<p><b><span style="font-size: larger">Słownik pojęć systemowych(kolejnośc od A-Z):
+</span></b></p>
+<p><b>Bilet</b>= cena biletu + numer miesjca + numer Sali + tytuł filmu. Upoważnia do wejścia na film.</p>
+<p><b>Płatność</b>– Forma płatności wymagająca połączenia się z jednym z spośród podanych 
+systemów: systemu płatności PayPal, systemu płatności PayU, systemu płatności ePrzelew, 
+systemu płatności Przelewy24, płatność kartą kredytową.</p>
+<p><b>Film</b> = tytuł + reżyser + data wyświetlania + cena. Poszczególne filmy wyswietlają się 
+w odpowiednich salach
+</p>
+<p><b>Klient</b>= imię + nazwisko + dane użytkownika. Osoba kupująca bilet w kinie/ użytkownik 
+strony internetowej.</p>
+<p><b>Miejsca siedzące</b>miejsca na sali kinowej, które zajmuje klient podczas seansu.</p>
+<p><b>Obsługa kina</b> = imie + nazwisko + numer idetyfikacyjny pracownika.</p>
+<p><b>Przekąsk</b>= cena towaru + towar. Klient wybiera sobie dostępne przekąski</p>
+<p><b>Rezerwacja</b>= ilość miejsc + numer sali + godzina wyświetlania filmu</p>
+<p><b> Sala </b>– miejsce w kinie, w którym wyświetlany jest film</p>
+<p><b>Użytkownik</b>= imię + nazwisko + email + hasło. Osoba podlegająca autoryzacji systemu.</p>
+
+<p><b><span style="font-size: larger">Wymagania funkcjonalne systemu w postaci 
+zadań szczegółowych:</span></b></p>
+<p><b>Zarezerwuj miejsce</b>-– funkcja polegająca na tym, że klient/obsługa kina zmienia status 
+wolnego miejsca(CRUD)
+</p>
+<p><b>Wybierz przekąsk</b>– klient opcjonalnie może wybrać interesujące go przekąski(dodaj do paragonu)
+</p>
+<p><b>Zarządzaj rezerwacją</b>– funkcja dla klienta/obsługi kina umożliwiająca zmianę statusu 
+zamówienia(CRUD</p>
+<p><b>Realizuj płatność</b>– funkcję, którą pełni zewnętrzny system płatności, płatność online można 
+rozliczyć na kilka sposbów – obsługa płatności kartą kredytową, obsługa płatności w systemie 
+PayPal, obsługa płatności za pomocą usługi ePrzelew/Przelewy24, obsługa płatności 
+systemem BLIK. Płatność w kinie można rozliczyć za pomocą tych samych sposobów oraz 
+można rozliczać się gotówką.(obsłuż wybór sposobu płatności, generuj paragon)
+</p>
+<p><b>Kontroluj bilety</b> – obsługa sprawdza czy osoba posiada przy sobie bilet(weryfikuj dane, 
+akceptuj, odrzuć)
+</p>
+<p><b>Zarządzaj salami</b>– funkcja dla operatora systemu do przygotowywanie sal na wyświetlnie 
+filmów(CRUD)</p>
+<p><b>Zarządzaj rezerwacjami</b>– funkcja dla operatora systemu doprzeglądania złożonych rezerwaci 
+i awaryjnych zmian statusu rezerwacji(przeglądaj, anuluj)
+</p>
+<p><b>Zarządzaj użytkownikami</b>operator systemu ma administracyjne możliwości zarządzania 
+danymi użytkowniów(CRUD)
+</p>
+<p><b>Autoryzuj użytkownika</b>– obsługa logowania do systemu na podstawie danych 
+użytkownika(email, hasło) oraz rejestracja użytkownika i obsługa trybu przypomnienia hasła. 
+(obsłuż logowanie, rejestracja użytkowniak, obsługa przypomnienia hasła, obsługa włamania 
+do systemu, zarządzenie panelem)</p>
+
+<p><b><span style="font-size: larger">Aktorzy:</span></b></p>
+<p><b>Klient</b> – osoba kupująca bilet na film/rezerwująca miejsce w kinie.</p>
+<p><b>Operator strony internetowej</b>– Administrator oparty na systemie, administrator
+zarządzający danymi po stornie backoffice.</p>
+<p><b>System obsługi płatności</b>- Zewnętrzne podmioty zajmujące się systemami płatności</p>
+<p><b>System zarządzania salami</b>i - Zewnętrzny podmiot zajmujący się dobieraniem sal do filmów 
+oraz konserwacją sal kinowych</p>
+
+ <div id="footer">Jakub Ostrowski/Mateusz Nasiadka</div>
+  </body>
+</html>

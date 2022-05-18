@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+        <title>SI organizacji kina</title>
+        <meta charset="UTF-8">
+        <meta name="Generator" content="JTHTML 8.6">
+        <meta name="Robots" content="index">
+        <link rel="Stylesheet" href="styl.css" type="text/css">
+
+  </head>
+  <body>
+        <div id="header">
+             <table class="table">
+                   <tbody>
+                          <tr>
+<!--  -->
+                              <td style="background: #ffffed"><a href="html.html">Strona główna</a></td>
+                              <td><a href="Diagram przypadków użycia.html">Diagram przypadków użycia</a></td>
+                              <td><a href="Diagram analityczny.html">Diagram analityczny</a></td>
+                              <td><a href="sidczyn.html">Scenariusze i diagramy czynności</a></td>
+                              <td><a href="klas.html">Diagram klas</a></td>
+                              <td><a href="diagram sekwencji.html">Diagram sekwencji</a></td>
+                              <td><a href="obi.html">Diagram obiektów</a></td>
+                          </tr>
+                   </tbody>
+            </table>
+        </div>
+        <div id="cnt">
+		
+		
+<p> W mieście powstało nowe kino. Kino zawiera kilka sal, w których w tych samych godzinach mogą 
+być wyświetlane różne filmy. Zainteresowany seansem klient przychodzi do kina z zamiarem 
+zarezerwowania miejsca na wybrany przez siebie film i udaje się do kasy. Pracownik kina w systemie, 
+szuka sali, na której będzie wyświetlany film. Następnie pokazuje dostępne miejsca, klient wybiera 
+odpowiadającą mu ilość miejsc, po czym opcjonalnie wybiera przekąski, sprzedawca wydaje paragon
+oraz bilet, na którym znajduje się numer sali, na której będzie wyświetlany film oraz numer miejsca 
+zarezerwowanego, klient za wszystko płaci dogodną formą płatności. Następnie klient pokazuje bilet 
+osobie pilnującej wejścia do sal. Samodzielnie udaje się do odpowiedniej sali i zajmuje swoje miejsce.
+ Postanowiono umożliwić rezerwację miejsc online. Na stronie kina wyświetla się repertuar 
+kina, jak i również krótki opis filmu, czas trwania filmu, reżyser filmu, data wyświetlania filmu, ocena 
+osób, które już obejrzały dany film. Po kliknięciu w wybrany film przekierowuje nas na stronę na 
+której wybieramy odpowiadającą nam godzinę seansu, następnie wyświetlają się wolne miejsca oraz 
+cena za poszczególne sektory. Spośród wolnych miejsc wybieramy te które chcemy zarezerwować. 
+ Do finalizacji rezerwacji niezbędne jest zalogowanie się użytkownika do systemu. W przypadku 
+nowych klientów konieczne jest założenie nowego konta. W tym celu klient korzysta
+z dedykowanego formularza, specyfikując niezbędne dane, do których należą: imię, nazwisko, 
+adres e-mail oraz hasło. Adres e-mail jest podstawą identyfikacji klienta w systemie. Hasło musi 
+zostać potwierdzone w osobnym polu w celu uniknięcia pomyłki. Analogicznie odbywa się 
+modyfikacja danych w ramach istniejącego konta użytkownika. Jeżeli Klient rezerwował wcześniej 
+miejsca w kinie (posiada konto użytkownika) proces logowania polega na wpisaniu adresu e-mail 
+klienta oraz jego osobistego hasła, a następnie ich akceptacji. Operator strony internetowej może 
+zarządzać rezerwacjami sal, seans może zostać anulowany, co wiąże się z anulowaniem wszystkich 
+rezerwacji.
+ Użytkownik wybiera formę płatności. Realizacją płatności zajmuje się zewnętrzny system. 
+Zakupione bilety są przesyłane na konto pocztowe użytkownika, klient będzie musiał jedynie pokazać 
+je przed wejściem do sali kinowej</p>
+
+<p><b><span style="font-size: larger">Cel Systemu:
+</span></b></p>
+<p><b>Utworzenie systemu zarządzania biletami w kinie</b></p>
+
+             <table  style="float:right; margin:6px">
+               <tbody>
+                 <tr>
+                   <td><a href="#kart"><img src="kino.jpg" style="border: 0; float: right" width="75%" height="75%" class="thumbnail2" alt=""></a>
+                   <a href="#_" class="lightbox2" id="kino"/> <img src=".jpg"></td>
+                 </tr>
+                 <tr>
+                   <td><i><b>Sala kinowa</b></i></td>
+                 </tr>
+               </tbody>
+             </table>
+
+<p><b><span style="font-size: larger">Słownik pojęć systemowych używanych w diagramach(kolejnośc od A-Z):
+</span></b></p>
+<p><b>Bilet</b>= cena biletu + numer miesjca + numer Sali + tytuł filmu. Upoważnia do wejścia na film.</p>
+<p><b>Płatność</b>– Forma płatności wymagająca połączenia się z jednym z spośród podanych 
+systemów: systemu płatności PayPal, systemu płatności PayU, systemu płatności ePrzelew, 
+systemu płatności Przelewy24, płatność kartą kredytową.</p>
+<p><b>Film</b> = tytuł + reżyser + data wyświetlania + cena. Poszczególne filmy wyswietlają się 
+w odpowiednich salach
+</p>
+<p><b>Klient</b>= imię + nazwisko + dane użytkownika. Osoba kupująca bilet w kinie/ użytkownik 
+strony internetowej.</p>
+<p><b>Miejsca siedzące</b>miejsca na sali kinowej, które zajmuje klient podczas seansu.</p>
+<p><b>Obsługa kina</b> = imie + nazwisko + numer idetyfikacyjny pracownika.</p>
+<p><b>Przekąsk</b>= cena towaru + towar. Klient wybiera sobie dostępne przekąski</p>
+<p><b>Rezerwacja</b>= ilość miejsc + numer sali + godzina wyświetlania filmu</p>
+<p><b> Sala </b>– miejsce w kinie, w którym wyświetlany jest film</p>
+<p><b>Użytkownik</b>= imię + nazwisko + email + hasło. Osoba podlegająca autoryzacji systemu.</p>
+<!--  tu wstaw zdjęcia żeby było fajne -->
+<!--  sadge nie wstawił -->
+
+        </div>
+        <div id="footer">Jakub Ostrowski/Mateusz Nasiadka</div>
+  </body>
+</html>
